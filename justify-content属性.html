@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .father {
+            width: 1200px;
+            height: 100px;
+            border: 1px solid #000000;
+            margin: 0 auto;
+            display: flex;
+            /*justify-content: center;从父容器中间排序*/
+            /*justify-content: flex-end;从父容器结尾排序*/
+            /*justify-content: space-around;相当于给每一个子元素添加margin*/
+            /*justify-content: space-between;左右盒子贴近父盒子，中间的平均分布空白间隙*/
+        }
+
+        div {
+            width: 300px;
+            height: 100px;
+
+        }
+
+        .father div:nth-child(1) {
+            background-color: pink;
+
+        }
+
+        .father div:nth-child(2) {
+            background-color: deeppink;
+
+        }
+
+        .father div:nth-child(3) {
+            background-color: hotpink;
+
+        }
+    </style>
+
+</head>
+<body>
+<div class="father">
+    <div></div>
+    <div></div>
+    <div></div>
+</div>
+</body>
+</html>

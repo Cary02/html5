@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无缝滚动</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+        }
+
+        .nav {
+            width: 500px;
+            height: 100px;
+            border: 1px solid pink;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .nav ul li {
+            float: left;
+
+        }
+
+        .nav ul {
+            width: 1000px;
+            animation: moving 2s linear infinite;
+
+        }
+
+        @keyframes moving {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(-500px);
+            }
+
+        }
+
+        .nav:hover ul {
+            animation-play-state: paused;
+        }
+
+    </style>
+</head>
+<body>
+<div class="nav">
+    <ul>
+        <li><img src="image/bg.png" width="100px" height="100px" alt=""></li>
+        <li><img src="image/5.jpeg" width="100px" height="100px" alt=""></li>
+        <li><img src="image/3.jpg" width="100px" height="100px" alt=""></li>
+        <li><img src="image/1.jpeg" width="100px" height="100px" alt=""></li>
+        <li><img src="image/1.jpg" width="100px" height="100px" alt=""></li>
+        <li><img src="image/bg.png" width="100px" height="100px" alt=""></li>
+        <li><img src="image/5.jpeg" width="100px" height="100px" alt=""></li>
+        <li><img src="image/3.jpg" width="100px" height="100px" alt=""></li>
+        <li><img src="image/1.jpeg" width="100px" height="100px" alt=""></li>
+        <li><img src="image/1.jpg" width="100px" height="100px" alt=""></li>
+    </ul>
+</div>
+</body>
+</html>

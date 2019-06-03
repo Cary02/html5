@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            animation: go 2s ease 0s infinite alternate; /*引用动画*/
+            /*动画名称自定义*/
+            /*infinite无限循环*/
+        }
+
+        /*动画定义@keyframes 动画名称 {}*/
+        @keyframes go {
+            from {
+                transform: translateX(0);
+            }
+            to {
+                transform: translateX(600px);
+            }
+
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

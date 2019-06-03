@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 100px;
+        }
+
+        .header .logo img {
+            width: 300px;
+            height: 85px;
+            margin-top: 8px;
+            margin-left: 150px;
+            float: left;
+        }
+
+        .header .nav ul {
+            margin-right: 50px;
+        }
+
+        .header .nav ul li {
+            float: right;
+            list-style-type: none;
+            font-size: 15px;
+            font-family: "微软雅黑";
+            color: #7d7d7d;
+            text-align: center;
+            line-height: 100px;
+            font-weight: bolder;
+            margin-right: 30px;
+        }
+
+        .main .top {
+            width: 100%;
+            height: 600px;
+        }
+
+        .main .top img {
+            width: 100%;
+            height: 600px;
+        }
+
+        .topLayer {
+            background-color: #000000;
+            opacity: 0.5;
+            z-index: 1;
+            position: absolute;
+            top: 100px;
+            width: 100%;
+            height: 600px;
+        }
+
+        .main .topLayer-top {
+            width: 500px;
+            height: 300px;
+            position: absolute;
+            top: 400px;
+            z-index: 4;
+            right: 50%;
+            margin-top: -150px;
+            margin-right: -250px;
+
+        }
+
+        .main .topLayer-top .word {
+            margin-top: 100px;
+            font-size: 45px;
+            color: #FFFFFF;
+            font-weight: bolder;
+            font-family: "微软雅黑";
+            text-align: center;
+
+        }
+
+        .main .topLayer-top button {
+            width: 200px;
+            height: 60px;
+            margin-top: 50px;
+            font-size: 14px;
+            font-family: "微软雅黑";
+            text-align: center;
+            background-color: #F5704F;
+            border-radius: 8px;
+            margin-left: 150px;
+        }
+
+        .main .middle {
+            width: 1000px;
+            margin: 0 auto;
+
+        }
+
+        .main .middle .m-top .comm {
+            float: left;
+            width: 33.3%;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .main .middle .m-top .comm img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .main .middle .m-top .comm .commw {
+            margin-top: 20px;
+            font-family: 微软雅黑;
+            font-size: 15px;
+            font-weight: bolder;
+            color: #7d7d7f;
+        }
+
+        .main .middle .m-middle {
+            font-size: 22px;
+            font-weight: bolder;
+            text-align: center;
+            color: #E19796;
+            padding-top: 50px;
+            font-style: italic;
+            padding-bottom: 50px;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .main .middle .m-bottom .m-comm img {
+            width: 310px;
+            height: 270px;
+        }
+
+        .main .middle .m-bottom .m-comm {
+            font-size: 20px;
+            float: left;
+            padding: 10px;
+            font-weight: bold;
+        }
+
+        .main .middle .m-bottom .m-comm .des1 {
+
+
+            color: #7d7d7f;
+            padding-top: 20px;
+
+
+        }
+
+        .main .middle .m-bottom .m-comm .des2 {
+
+
+            color: #bdbdbc;
+            padding-top: 10px;
+
+        }
+
+        .main .bottom {
+            background-color: #f9f9f9;
+        }
+
+        .main .bottom .contain {
+            width: 1000px;
+            margin: 0 auto;
+
+
+        }
+
+        .main .bottom .contain .title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #7d7d7f;
+            font-family: 微软雅黑;
+            padding-top: 50px;
+            text-align: center;
+        }
+
+        .main .bottom .contain .pic2 dl {
+            float: left;
+            width: 470px;
+            padding: 10px;
+        }
+
+        .main .bottom .contain .pic2 dl dt img {
+            width: 470px;
+            height: 360px;
+
+        }
+
+        .main .bottom .contain .pic2 dl .word {
+            font-size: 20px;
+            margin-top: 20px;
+            color: #7d7c7f;
+            padding-bottom: 50px;
+            font-weight: bold;
+
+        }
+
+    </style>
+
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <div class="logo">
+        <img src="image/logo.png"/>
+    </div>
+    <div class="nav">
+        <ul>
+            <li>手记</li>
+            <li>视屏</li>
+            <li>图片</li>
+            <li>首页</li>
+        </ul>
+    </div>
+
+</div>
+<!--中间-->
+<div class="main">
+    <div class="top">
+        <img src="image/5.jpeg">
+    </div>
+    <!--遮罩层-->
+    <div class="topLayer"></div>
+    <div class="topLayer-top">
+        <div class="word">MY BEAUTIFUL LIFE</div>
+        <button>LOOK MORE &gt</button>
+    </div>
+    <div class="middle">
+        <div class="m-top">
+
+            <div class="comm weibo">
+                <img src="image/weibo.png">
+                <div class="commw">MICROBLOG</div>
+            </div>
+            <div class="comm weixin">
+                <img src="image/weixin.png">
+                <div class="commw">WECHAT</div>
+            </div>
+            <div class="comm qq">
+                <img src="image/QQ.png">
+                <div class="commw">QQ</div>
+            </div>
+
+        </div>
+        <div class="clear"></div>
+
+        <div class="m-middle">
+
+            "I want to give good things to record down,<br>
+            after the recall will be very beautiful."
+        </div>
+        <div class="m-bottom">
+            <div class="m-comm">
+                <img src="image/03-01.jpg">
+                <div class="des1">Cool Image</div>
+                <div class="des2">Record The Picture</div>
+            </div>
+            <div class="m-comm">
+                <img src="image/03-02.jpg">
+                <div class="des1">Great Picture</div>
+                <div class="des2">Record The Picture</div>
+            </div>
+            <div class="m-comm">
+                <img src="image/03-03.jpg">
+                <div class="des1">Cool Image</div>
+                <div class="des2">Record The Picture</div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div class="bottom">
+        <div class="contain">
+            <div class="title">FROM THE PHOTO ALBUM</div>
+            <div class="pic2">
+                <dl>
+                    <dt><img src="image/04-01.jpg"></dt>
+                    <dd class="word">Life is like a book, just read more and more refined, more write more
+                        carefully. When read, mind open, all things have been indifferent to
+                        heart. Life is the precipitation.
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><img src="image/04-02.jpg"></dt>
+                    <dd class="word">
+                        Life is like a cup of tea, let people lead a person to endless
+                        aftertastes. You again good taste, it will always have a different
+                        taste, different people will have different taste more.
+                    </dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!--底部-->
+<div class="footer"></div>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>排版3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top {
+            height: 80px;
+            background-color: pink;
+            text-align: center;
+            border: 1px dashed #eee;
+            margin-bottom: 8px;
+        }
+
+        .banner {
+            width: 960px;
+            height: 150px;
+            background-color: lightpink;
+            border: 1px dashed #eee;
+            margin: 0 auto;
+            margin-bottom: 8px;
+            text-align: center;
+        }
+
+        .main {
+            width: 960px;
+            height: 200px;
+            border: 1px dashed #eee;
+            margin: 0 auto;
+
+            margin-bottom: 8px;
+        }
+
+        .main ul li {
+            list-style: none;
+            width: 230px;
+            height: 200px;
+            border: 1px dashed #eee;
+            background-color: hotpink;
+            float: left;
+
+        }
+
+        .main ul li:last-child {
+            float: right;
+        }
+
+        .main ul li:nth-child(2) {
+            margin: 0 10px 0 11px;
+        }
+
+        .footer {
+            height: 100px;
+            background-color: deeppink;
+            border: 1px dashed #eee;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="top">top</div>
+<div class="banner">banner</div>
+<div class="main">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</div>
+<div class="main">
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+</div>
+<div class="footer">footer</div>
+</body>
+</html>

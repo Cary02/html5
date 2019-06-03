@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+<h1 align="center">注册信息</h1>
+<hr color="#000000"/>
+<form action="action.php" method="get" target="_blank"><!-- action" url发送表单数据地址"
+                                                            method"get"获取数据""post数据保密"
+                                                            target"_blank""_self"
+                                                            enctype 编码方式      -->
+    <table align="center" width="900px">
+        <tr>
+            <td align="right">姓名：</td>
+            <td align="left"><input type="text" name="username" placeholder="请输入姓名" size="25"></td>
+        </tr>
+        <tr>
+            <td align="right">邮箱：</td>
+            <td align="left"><input type="text" name="email" value="@qq,com" size="25"></td>
+        </tr>
+        <tr>
+            <td align="right">密码：</td>
+            <td align="left"><input type="password" name="psw" size="25"></td>
+        </tr>
+        <tr>
+            <td align="right">确认密码：</td>
+            <td align="left"><input type="password" name="psw" size="25"></td>
+        </tr>
+        <tr>
+            <td align="right">上传照片：</td>
+            <td align="left"><input type="file" name="file"></td>
+        </tr>
+        <tr>
+            <td align="right">性别：</td>
+            <td align="left">男<input type="radio" name="1" value="man">
+                女<input type="radio" name="1" value="nv">
+                保密<input type="radio" name="1" value="bm" checked></td>
+        </tr>
+        <tr>
+            <td align="right">爱好：</td>
+            <td align="left">读书<input type="checkbox" name="read" value="read" checked>
+                写字<input type="checkbox" name="riter" value="riter">
+                唱歌<input type="checkbox" name="sing" value="sing"></td>
+        </tr>
+
+        <tr>
+            <td align="right">城市：</td>
+            <td align="left">
+                <select name="city">
+                    <option value="bj">北京</option>
+                    <option value="sh">上海</option>
+                    <option value="sc">四川</option>
+                    <option value="cd" selected>成都</option>
+                    <option value="hn">湖南</option>
+                    <option value="xa">新安</option>
+
+                </select>
+                <select name="city" multiple>                <!--multiple下拉菜单项目-->
+
+                    <option>--请选择--</option>
+                    <optgroup label="华北省">
+                        <option value="bj">北京</option>
+                        <option value="sh" selected>上海</option>
+                        <option value="sc">四川</option>
+                    </optgroup>
+                    <optgroup label="华南省">
+
+                        <option value="cd">成都</option>
+                        <option value="hn">湖南</option>
+                        <option value="xa">新安</option>
+                    </optgroup>
+                </select>
+            </td>
+
+        <tr>
+            <td align="right">简介：</td>
+            <td align="left">
+                <textarea name="wenben" cols="30" rows="6" placeholder="请输入简介"></textarea>
+                <!-- cols宽度    rows行数    placeholder预期值提示 -->
+
+
+            </td>
+        </tr>
+
+
+        <tr>
+
+            <td colspan="2" align="center"><input type="button" name="1">
+                <input type="submit" name="2">
+                <input type="reset" name="3">
+                <input type="image" name="image_button" src="image/1.jpg" width="40px" height="20px"></td>
+
+        </tr>
+
+
+    </table>
+</form>
+
+</body>
+</html>

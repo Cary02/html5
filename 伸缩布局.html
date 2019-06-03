@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伸缩布局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            width: 80%;
+            height: 100px;
+            margin: 100px auto;
+            display: flex; /*给父级添加flex*/
+            min-width: 100px; /*缩放最小宽度*/
+        }
+
+        div {
+            height: 100px;
+            float: left;
+            background-color: pink;
+            border: 1px solid #000000;
+        }
+
+        div:nth-child(1) {
+            flex: 1;
+        }
+
+        div:nth-child(2) {
+            flex: 2;
+            margin: 0 5px;
+        }
+
+        div:nth-child(3) {
+            flex: 1;
+        }
+
+    </style>
+</head>
+<body>
+<nav>
+    <div></div>
+    <div></div>
+    <div></div>
+</nav>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>文字上升效果</title>
+    <style>
+        div {
+            width: 200px;
+            height: 300px;
+            margin: 50px auto;
+            background-color: pink;
+            transition: width 1s ease-in-out 0s, height 1s ease-in-out 0s;
+        }
+
+        div:hover {
+            width: 500px;
+            height: 500px;
+        }
+
+        h2 {
+            transform: translate3d(0, 50px, 0);
+            transition: all 1s;
+        }
+
+        h2:hover {
+            transform: translate3d(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+<div></div>
+<h2>我好帅</h2>
+</body>
+</html>
